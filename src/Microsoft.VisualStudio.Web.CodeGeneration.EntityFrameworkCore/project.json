@@ -8,6 +8,7 @@
     ],
     "xmlDoc": true
   },
+  "description": "Contains EntityFrameworkCore Services used by ASP.NET Core Code Generators.",
   "dependencies": {
     "Microsoft.AspNetCore.Hosting": "1.0.0-*",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-*",
@@ -27,7 +28,18 @@
       }
     }
   },
-  "packInclude": {
-    "Templates/": "Templates/"
+  "packOptions": {
+    "files": {
+      "mappings": {
+        "Templates/": "Templates/"
+      }
+    },
+    "tags": [
+      "aspnetcore",
+      "aspnetcoremvc",
+      "codegenerator",
+      "scaffolding",
+      "visualstudioweb"
+    ]
   }
 }
